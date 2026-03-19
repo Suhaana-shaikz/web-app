@@ -1,0 +1,486 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<title>Wedding</title>
+
+<style>
+
+
+
+@keyframes fadeUpu {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hidden-el {
+  opacity: 0;
+}
+
+.fade-upue {
+  animation: fadeUp 1s ease forwards;
+}
+
+
+@keyframes fadeU {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hidden-el {
+  opacity: 0;
+}
+
+.fade-u {
+  animation: fadeUp 1s ease forwards;
+}
+
+
+
+
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.fade-left { animation: fadeLeft 1.2s ease forwards; }
+.fade-right { animation: fadeRight 1.2s ease forwards; }
+
+.hidden-el {
+  opacity: 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<section
+class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center px-4 sm:px-6 lg:px-8"
+style="background-image:url('image1.webp')">
+
+<!-- Overlay -->
+<div class="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
+
+<!-- Content -->
+<div class="relative max-w-3xl">
+
+<!-- Top line -->
+<div class="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-10 animate-fadeUp">
+
+<span class="h-[1px] w-10 sm:w-20 bg-[#D4AF37]"></span>
+
+<p class="uppercase tracking-[4px] sm:tracking-[6px] text-[#0F3D3E] text-xs sm:text-sm font-semibold">
+Bismillah ir Rahman ir Raheem
+</p>
+
+<span class="h-[1px] w-10 sm:w-20 bg-[#D4AF37]"></span>
+
+</div>
+
+<!-- Bride -->
+<!-- <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#0F3D3E] mb-3 animate-fadeUp delay-1 hover:scale-105 transition duration-500">
+Shaik Tabasson Ara
+</h1> -->
+
+<h1
+class="font-['Great_Vibes'] text-4xl sm:text-4xl md:text-6xl lg:text-6xl text-[#0F3D3E] mb-2 tracking-wide drop-shadow-md transition duration-700 hover:scale-105">
+Shaik Tabasson Ara
+</h1>
+
+
+
+<p class="text-xl sm:text-2xl text-white my-3 animate-pulse">&</p>
+
+<h1
+class="font-['Great_Vibes'] text-4xl sm:text-4xl md:text-6xl lg:text-6xl text-[#0F3D3E] mb-6 tracking-wide drop-shadow-md transition duration-700 hover:scale-105">
+G.M Murad Ahmed
+</h1>
+
+<p class="italic text-gray-700 text-sm sm:text-base md:text-lg mb-6 animate-fadeUp delay-3">
+Together with our families invite you to celebrate our Nikah
+</p>
+
+<p class="text-lg sm:text-xl md:text-2xl font-semibold text-[#0F3D3E] animate-fadeUp delay-4">
+05 April 2026
+</p>
+
+</div>
+
+<div id="scrollBtn"class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer hover:scale-110 transition">
+
+<!-- <div class="w-6 h-10 border-2 border-[#0F3D3E] rounded-full flex justify-center"> -->
+<!-- <div class="w-1 h-2 bg-[#0F3D3E] mt-2 rounded-full animate-pulse"></div> -->
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section
+class="relative min-h-screen flex items-center  gap-20 text-center bg-cover bg-top md:bg-center px-4 sm:px-6"
+style="background-image:url('image2.jpg') ">
+
+<!-- overlay -->
+<div class="absolute inset-0 bg-white/30 md:bg-white/20 backdrop-blur-sm"></div>
+
+<div class="relative max-w-6xl mx-auto">
+
+<!-- Heading -->
+<h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#0F3D3E] mb-12 sm:mb-16 md:mb-20 pt-[22px]">
+The Couple
+</h2>
+<!-- 
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center"> -->
+
+  <!-- GRID (Gap applied here ✅) -->
+<div class="grid grid-cols-1 md:grid-cols-2 
+gap-y-12 md:gap-y-16 
+gap-x-24 md:gap-x-32 lg:gap-x-80 items-center">
+
+<!-- Bride -->
+<div class="text-center hidden-el" id="bride">
+
+<div class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-60 lg:h-60 mx-auto mb-6">
+
+<img
+src="bride.png"
+class="w-full h-full rounded-full object-cover shadow-[0_20px_50px_rgba(0,0,0,0.35)] ring-4 ring-white transition duration-500 hover:scale-105"
+/>
+
+</div>
+
+<h3 class="text-2xl sm:text-3xl font-semibold text-[#0F3D3E]">
+Shaik Tabassum Ara
+</h3>
+
+<p class="text-gray-600 mt-3 italic text-sm sm:text-base"> Daughter of
+</p>
+
+<p class="text-gray-700 font-medium text-sm sm:text-base">
+Mr & Mrs Farida
+</p>
+
+</div>
+
+<!-- Groom -->
+<div class="text-center hidden-el" id="groom">
+
+<div class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-60 lg:h-60 mx-auto mb-6">
+
+<img
+src="groom.png"
+class="w-full h-full rounded-full object-cover shadow-[0_20px_50px_rgba(0,0,0,0.35)] ring-4 ring-white transition duration-500 hover:scale-105"
+/>
+
+</div>
+
+<h3 class="text-2xl sm:text-3xl font-semibold text-[#0F3D3E]">
+Murad Ahmed
+</h3>
+
+<p class="text-gray-600 mt-3 italic text-sm sm:text-base">
+ Son of
+</p>
+
+<p class="text-gray-700 font-medium text-sm sm:text-base pb-[22px]">
+Mr & Mrs Maqbool
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section
+class="min-h-screen relative py-16 sm:py-20 md:py-24 lg:py-28 text-center sm:bg-cover  sm:bg-top bg-contain bg-right md:bg-center px-4 sm:px-6"
+style="background-image:url('image3.jpg')">
+
+<!-- overlay -->
+<div class="absolute inset-0 bg-white/60 md:bg-white/10"></div>
+
+<div class="relative max-w-6xl mx-auto">
+
+<!-- Heading -->
+<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[#0F3D3E] mb-10 sm:mb-14 md:mb-20">
+Wedding Events
+</h2>
+
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
+
+<!-- Nikah Card -->
+<div class="hidden-el bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 transition hover:shadow-2xl hover:scale-105 duration-300">
+
+<h3 class="text-2xl sm:text-3xl font-semibold text-[#0F3D3E] mb-4 sm:mb-6">
+Nikah
+</h3>
+
+<p class="text-base sm:text-lg text-gray-700">
+05 April 2026
+</p>
+
+<p class="text-gray-600 mb-2 sm:mb-3">
+Sunday
+</p>
+
+<p class="text-gray-700 mb-2 sm:mb-3">
+11:00 AM
+</p>
+
+<p class="text-gray-700 mb-4 sm:mb-6">
+RRR Convention Hall, Old Town, Ananthapuramu
+</p>
+
+<a
+href="#"
+class="inline-block px-5 sm:px-6 py-2 sm:py-3 bg-[#0F3D3E] text-white rounded-lg hover:bg-[#0c2f30] transition">
+View Location
+</a>
+
+</div>
+
+<!-- Valima Card -->
+<div class="hidden-el bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 transition hover:shadow-2xl hover:scale-105 duration-300">
+
+<h3 class="text-2xl sm:text-3xl font-semibold text-[#0F3D3E] mb-4 sm:mb-6">
+Valima
+</h3>
+
+<p class="text-base sm:text-lg text-gray-700">
+06 April 2026
+</p>
+
+<p class="text-gray-600 mb-2 sm:mb-3">
+Monday
+</p>
+
+<p class="text-gray-700 mb-2 sm:mb-3">
+7:00 PM
+</p>
+
+<p class="text-gray-700 mb-4 sm:mb-6">
+RRR Convention Hall, Old Town,  Ananthapuramu
+</p>
+
+<a
+href="#"
+class="inline-block px-5 sm:px-6 py-2 sm:py-3 bg-[#0F3D3E] text-white rounded-lg hover:bg-[#0c2f30] transition">
+View Location
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section
+class="relative py-16 sm:py-20 md:py-24 lg:py-28 text-center bg-red-200/15 px-4 sm:px-6">
+
+<div class="max-w-5xl mx-auto">
+
+<!-- Heading -->
+<h2 class="hidden-ele text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[#0F3D3E] mb-4 sm:mb-6">
+Where the Celebration Begins
+</h2>
+
+<!-- Subtitle -->
+<p class="hidden-ele text-sm sm:text-base md:text-lg text-gray-600 italic mb-8 sm:mb-10">
+Join us at this beautiful venue as we celebrate our Nikah
+</p>
+
+<!-- Venue -->
+<h3 class="hidden-ele text-xl sm:text-2xl md:text-3xl font-semibold text-[#0F3D3E] mb-2">
+RRR Convention Hall, Old Town
+</h3>
+
+<p class="hidden-ele text-sm sm:text-base text-gray-600 mb-8 sm:mb-10">
+05 April 2026 • Sunday
+</p>
+
+<!-- Map Image -->
+<a href="#" target="_blank">
+
+<img
+src="mapImage.png"
+class="hidden-el w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto rounded-xl 
+shadow-2xl transition duration-500 hover:scale-105 hover:shadow-[0_25px_60px_rgba(0,0,0,0.25)]"
+/>
+
+</a>
+
+<p class="hidden-ele text-xs sm:text-sm text-gray-500 mt-3">
+Click the map to open directions
+</p>
+
+<!-- Message -->
+<div class="mt-12 sm:mt-14 md:mt-16">
+
+<p class="hidden-ele text-sm sm:text-base md:text-lg text-gray-700 italic leading-relaxed">
+With the blessings of Allah and our beloved families,
+we warmly invite you to join us, celebrate with us, and bless our journey as we begin a new chapter of life together.
+</p>
+
+<p class="hidden-ele text-xl sm:text-2xl text-[#0F3D3E] mt-6 font-light">
+With Love
+</p>
+
+<p class="hidden-ele text-lg sm:text-xl md:text-2xl text-[#D4AF37] mt-2 tracking-wide">
+Tabbasum Ara & Murad Ahmed
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS for smooth scroll -->
+<script>
+document.getElementById("scrollBtn").onclick = function () {
+  document.getElementById("next").scrollIntoView({
+    behavior: "smooth"
+  });
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      if(entry.target.id === "bride"){
+        entry.target.classList.add("fade-left");
+      } else {
+        entry.target.classList.add("fade-right");
+      }
+    }
+  });
+});
+
+observer.observe(document.getElementById("bride"));
+observer.observe(document.getElementById("groom"));
+
+
+
+const elements = document.querySelectorAll('.hidden-el');
+
+const observeeer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('fade-u');
+    }
+  });
+});
+
+elements.forEach(el => observeeer.observe(el));
+
+
+
+const elementes = document.querySelectorAll('.hidden-ele');
+
+const observere = new IntersectionObserver(entriees => {
+  entriees.forEach(e => {
+    if(e.isIntersecting){
+      e.target.classList.add('fade-upu');
+    }
+  });
+});
+
+elementes.forEach(el => observere.observe(el));
+
+
+
+
+
+</script>
+
+</body>
+</html>
