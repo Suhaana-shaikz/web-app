@@ -15,6 +15,11 @@
 
 <style>
 
+  body {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
   /* ONE CLEAN ANIMATION */
 @keyframes fadeUp {
   from {
@@ -149,11 +154,11 @@ class="relative py-16 sm:py-20 md:py-24 flex items-center justify-center text-ce
   <div class="relative max-w-3xl z-10">
 
     <!-- Top line -->
-    <div class="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-10 animate-fadeUp">
+    <div class="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-10 hidden-el">
 
       <span class="h-[1px] w-10 sm:w-20 bg-[#D4AF37]"></span>
 
-      <p class="uppercase tracking-[4px] sm:tracking-[6px] text-white text-xs sm:text-sm font-semibold">
+      <p class="uppercase tracking-[4px] sm:tracking-[6px] text-white text-xs sm:text-sm font-semibold hidden-el delay-1">
         Bismillah ir Rahman ir Raheem
       </p>
 
@@ -163,25 +168,25 @@ class="relative py-16 sm:py-20 md:py-24 flex items-center justify-center text-ce
 
     <!-- Bride -->
     <h1
-      class="font-['Great_Vibes'] text-4xl sm:text-4xl md:text-6xl lg:text-6xl text-white mb-2 tracking-wide drop-shadow-md transition duration-700 hover:scale-105">
-      Shaik Tabassum Ara
+      class="font-['Great_Vibes'] text-4xl sm:text-4xl md:text-6xl lg:text-6xl text-white mb-2 tracking-wide drop-shadow-md transition duration-700 hover:scale-105 hidden-el delay-2">
+            G.M Murad Ahmed 
     </h1>
 
-    <p class="text-xl sm:text-2xl text-white my-3 animate-pulse">&</p>
+    <p class="text-xl sm:text-2xl text-white my-3 animate-pulse hidden-el delay-3">&</p>
 
     <!-- Groom -->
     <h1
-      class="font-['Great_Vibes'] text-4xl sm:text-4xl md:text-6xl lg:text-6xl text-white mb-6 tracking-wide drop-shadow-md transition duration-700 hover:scale-105">
-      G.M Murad Ahmed
+      class="font-['Great_Vibes'] text-4xl sm:text-4xl md:text-6xl lg:text-6xl text-white mb-6 tracking-wide drop-shadow-md transition duration-700 hover:scale-105 hidden-el delay-4">
+Shaik Tabassum Ara
     </h1>
 
     <!-- Description -->
-    <p class="italic text-gray-200 text-sm sm:text-base md:text-lg mb-6 animate-fadeUp delay-3">
+    <p class="italic text-gray-200 text-sm sm:text-base md:text-lg mb-6 hidden-el delay-3">
       Together with our families invite you to celebrate our Wedding
     </p>
 
     <!-- Date -->
-    <p class="text-lg sm:text-xl md:text-2xl font-semibold text-white animate-fadeUp delay-4">
+    <p class="text-lg sm:text-xl md:text-2xl font-semibold text-white hidden-el delay-4">
       05 April 2026
     </p>
 
@@ -203,10 +208,10 @@ class="relative py-16 sm:py-20 md:py-24 flex items-center justify-center text-ce
 
 <section
 class="relative py-20 flex items-center text-center bg-cover bg-center px-4 sm:px-6 overflow-hidden  min-h-[100dvh]"
-style="background-image:url('image.jpg')">
+style="background-image:url('gpg.jpg')">
 
 <!-- overlay -->
-<div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+<div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
 
 <div class="relative max-w-6xl mx-auto w-full">
 
@@ -280,10 +285,10 @@ class="relative py-20 px-4 sm:px-6 text-center overflow-hidden
 bg-[url('xxx.jpg')] 
 bg-repeat 
 bg-contain 
-bg-top min-h-[100dvh]">
+bg-top min-h-[100dvh]  backdrop-blur-sm">
 
   <!-- 🌫 Overlay -->
-  <div class="absolute inset-0 bg-white/20"></div>
+  <div class="absolute inset-0 bg-black/60"></div>
 
   <!-- 💍 Content -->
   <div class="relative max-w-6xl mx-auto z-10">
@@ -359,32 +364,32 @@ text-white tracking-wide mb-16 drop-shadow-md hidden-el">
 <section
 class="relative py-16 sm:py-20 md:py-24 lg:py-28 text-center px-4 sm:px-6 
 min-h-[100dvh] 
-bg-[url('ad.png')] bg-cover bg-center">
+bg-[url('venue.jpg')] bg-white/20 bg-cover bg-center">
 
 <!-- 🌫 Overlay (VERY IMPORTANT) -->
-<div class="absolute inset-0 bg-white/20"></div>
+<div class="absolute inset-0 bg-black/60"></div>
 
 <div class="relative max-w-5xl mx-auto">
 
 <!-- Heading -->
 <h2 class="hidden-el  text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light 
-text-[#5A3E2B] mb-4 sm:mb-6">
+text-white mb-4 sm:mb-6">
 Where the Celebration Begins
 </h2>
 
 <!-- Subtitle -->
 <p class="text-sm sm:text-base md:text-lg 
-text-[#7A5C45] italic mb-8 sm:mb-10 hidden-el delay-1">
+text-white italic mb-8 sm:mb-10 hidden-el delay-1">
 Join us at this beautiful venue as we celebrate our Wedding
 </p>
 
 <!-- Venue -->
 <h3 class="hidden-el delay-2 text-xl sm:text-2xl md:text-3xl font-semibold 
-text-[#3E2C1C] mb-2">
+text-white mb-2">
 RRR Convention Hall, Old Town
 </h3>
 
-<p class="hidden-el delay-3 text-sm sm:text-base text-[#7A5C45] mb-8 sm:mb-10">
+<p class="hidden-el delay-3 text-sm sm:text-base mb-8 sm:mb-10 text-white">
 05 April 2026 • Sunday
 </p>
 
@@ -393,7 +398,7 @@ RRR Convention Hall, Old Town
 <img
 src="mapImage.png"
 class="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto rounded-xl 
-shadow-2xl transition duration-500 hover:scale-105"
+shadow-2xl transition duration-500 hover:scale-105 hidden-el delay-4 "
 />
 </a>
 
@@ -401,18 +406,18 @@ shadow-2xl transition duration-500 hover:scale-105"
 <div class="mt-12 sm:mt-14 md:mt-16">
 
 <p class="text-sm sm:text-base md:text-lg 
-text-[#5A3E2B] italic leading-relaxed hidden-el delay-4">
+text-white italic leading-relaxed hidden-el delay-4">
 With the blessings of Allah and our beloved families,  
 we warmly invite you to join us, celebrate with us, and bless our journey  
 as we begin a new chapter of life together.
 </p>
 
-<p class="text-xl sm:text-2xl text-[#3E2C1C] mt-6 font-light">
+<p class="text-xl sm:text-2xl text-white mt-6 font-light">
 With Love
 </p>
 
-<p class="text-lg sm:text-xl md:text-2xl text-[#C9A14A] mt-2 tracking-wide">
-Tabassum Ara & Murad Ahmed
+<p class="text-lg sm:text-xl md:text-2xl text-yellow-400 mt-2 tracking-wide">
+ Murad Ahmed & Tabassum Ara 
 </p>
 
 </div>
@@ -465,11 +470,21 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       entry.target.classList.add('show');
+      observer.unobserve(entry.target); // important
     }
   });
 }, { threshold: 0.2 });
 
+// observe all
 elements.forEach(el => observer.observe(el));
+
+// 🔥 fix first section
+elements.forEach(el => {
+  const rect = el.getBoundingClientRect();
+  if(rect.top < window.innerHeight){
+    el.classList.add('show');
+  }
+});
 </script>
 
 </body>
